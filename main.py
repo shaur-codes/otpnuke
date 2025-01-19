@@ -6,7 +6,7 @@ import time
 with open("api.json", "r") as file:
     config = json.load(file)
 
-phone_number = "9236938255"
+phone_number = ""
 success_count = 0
 failure_count = 0
 total_requests_sent = 0
