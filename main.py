@@ -19,7 +19,6 @@ async def make_request(api, phone_number):
     api["url"] = api["url"].format(phone_number=phone_number)
     if "params" in api:
         for key in api["params"]:
-            print(key)
             # Only apply formatting if the value is a string and contains the placeholder
             if isinstance(api["params"][key], str) and "{phone_number}" in api["params"][key]:
                 api["params"][key] = api["params"][key].format(phone_number=phone_number)
